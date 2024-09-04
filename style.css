@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondry-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #263B5C;
+  --secondry-color: #22f0ff;
+  --white-color: #F15B43;
+  --text-color: white;
+  --black-color: #1E1D23;
+  --primary-font: 'Roboto', sans-serif;
+  --secondry-font: 'Quicksand', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+h1{
+    font-family: "Jost",sans-serif;
+    color: var(--text-color);
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: normal
+}
+span{
+    color: var(--secondry-color);
+}
+h2{
+    font-family: "Jost",sans-serif;
+    color: var(--primary-color);
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: normal
+}
+h5{
+  font-family: "Jost",sans-serif;
+    color: var(--primary-color);
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: normal
+}
+
+p {
+    font-family: "Rubik",sans-serif;
+    color: var(--black-color);
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.6
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--text-color);
+  color: var(--black-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  /* border-radius: 0.5rem; */
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--white-color);
+}
+
+.wrapper {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+.navigation-wrap{
+    position:fixed;
+    width:100%;
+    left:0;
+    z-index:1000;
+    -webkit-transition:all 0.3s ease-out;
+    transition:all 0.3s ease-out;
+  }
+.navigation-wrap .nav-item{
+    padding:0 0.625rem;
+    transition:all 0.3s linear;
+    
+  } 
+.navbar-toggler:focus{
+    outline:unset;
+    border:unset;
+    box-shadow: none;
+  }
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:var(--text-color);
+    letter-spacing:1px;
+  }
+.nav-link:hover,
+.nav-link.active{
+    color:var(--secondry-color) !important;
+  }
+.navigation-wrap .main-btn{
+    padding:0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left:0.625rem;
+}
+.navigation-wrap.scroll-on{
+    position:fixed;
+    background-color:var(--primary-color);
+    top:0;
+    left:0;
+    width:100%;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+.navigation-wrap.scroll-on .nav-link{
+    color:var(--secondry-color);
+  }
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active{
+    color:var(--primary-color);
+}
+.top-banner{
+    width:100%;
+    background:url('../images/hero/h1_hero1.jpg') no-repeat center;
+    background-size: cover;
+    padding:16.875rem 0 9.375rem;
+  }
+.top-banner p{
+    color:var(--white-color);
+  }
+
+.about-section{
+    background: rgb(241, 219, 171);
+  }
+  .about-section .card,
+  .about-section .card img{
+    border-radius: 0.625rem;
+  }
+  .about-section .text-sec{
+    padding-left:2rem;
+  }
+.food{
+  width: 100%;
+  background:url('../images/gallery/section-bg1.jpg') no-repeat center;
+  background-size: cover;
+  padding:16.875rem 0 9.375rem;
+ } 
+
+.footer{
+  background-color: var(--primary-color);
+} 
+
